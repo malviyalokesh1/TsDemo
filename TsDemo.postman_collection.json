@@ -1,0 +1,91 @@
+{
+	"info": {
+		"_postman_id": "41dad743-bf31-44f5-bea6-f3a4a8df75fa",
+		"name": "TsDemo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User sign-in",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Lokesh Malviya\",\r\n    \"email\": \"er.malviyalokesh@gmail.com\",\r\n    \"password\": \"password\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:6060/log-in",
+					"host": [
+						"localhost"
+					],
+					"port": "6060",
+					"path": [
+						"log-in"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User sign-up",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Lokesh Malviya\",\r\n    \"email\": \"er.malviyalokesh@gmail.com\",\r\n    \"password\": \"password\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:6060/sign-up",
+					"host": [
+						"localhost"
+					],
+					"port": "6060",
+					"path": [
+						"sign-up"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMjg2ZTVhNzkxY2RlNjdkYjBjNGI0YSIsImlhdCI6MTY0NjgxNjg3MCwiZXhwIjoxNjQ2ODE3NzcwfQ.ANxwAWQ925d25JfPuiFmInTaJz56A17FHZ20Ygs2MnI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:6060/user",
+					"host": [
+						"localhost"
+					],
+					"port": "6060",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
